@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức</title>
+        <link rel="icon" type="image/x-icon" href="../assets/image/image-logo/logo.png">
+
+        <link rel="stylesheet" href="../assets/Sources-CSS/news.css">
+        <link rel="stylesheet" href="../assets/Sources-CSS/color.css">
+        <link rel="stylesheet" href="../assets/fontawesome-free-6.2.0-web/css/all.min.css">
+        <link rel="stylesheet" href="../assets/Sources-CSS/css-public.css">
+        <link rel="stylesheet" href="../assets/Sources-CSS/responsive.css">
+
+
+ 
+</head>
+<body>
+    <div id="header">
+        <div id="header-navbar">
+
+            <div class="list-social">
+                <ul class="icon-social">
+                    <li class="fab"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="twi"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="igr"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="lik"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li class="ytb"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+                
+            </div>
+            
+            <div class="lang-with-sign">
+                <select name="list-languge" id="languge">
+                        <option value="vietnam">VIE</option>
+                        <option value="english">ENG</option>
+                    
+                </select>
+            
+                
+                <div class="header-navbar-link">
+                    <a href="javascript:void(0);" class="sign js-sign_in" onclick = "formfunction_lgin()">Đăng nhập</a>
+                    <span></span>
+                    <a href="javascript:void(0);" class="sign js-sign_up" onclick = "formfunction()">Đăng ký</a>
+        
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="logo-nav">
+            <a href="#" class="logo">
+                <img src="../assets/image/image-logo/logo.png" alt="" class="logo-img">
+                <span>VLEAGUE</span>
+            </a>
+
+            <ul id="nav">
+                <li><a href="./index.html">Trang chủ</a></li>
+                <li>
+                    <a href="javascript:void(0);">Giải đấu</a>
+                    <ul class="subnav">
+                        <li><a href="./point_table.html">Bảng xếp hạng</a></li>
+                        <li><a href="./schedule.html">Xem lịch đấu</a></li>
+                    </ul>
+                </li>
+                <li><a href="./news.html">Tin tức</a></li>
+                <li><a href="./contact.html">Liên hệ</a></li>
+            </ul>
+            <button class="hd-bars js-bars">
+                <i class="fa-sharp fa-solid fa-bars "></i>
+
+            </button>
+        </div>
+        <div class="nav-mobile-overlay js-nav-overlay">
+
+        </div>
+        <div class="nav-mobile js-nav-mobile">
+            <ul class="nav-mobile-list">
+                <li><a href="./index.html">Trang chủ</a></li>
+                <li>
+                    <a href="javascript:void(0);"  onclick="myFunction()">
+                        Giải đấu
+                        <i class="fa-solid fa-angle-down"></i>
+                    </a>    
+                    <ul id="js-sub" class="subnav-mobile">
+                        <li><a href="./point_table.html">Bảng xếp hạng</a></li>
+                        <li><a href="./schedule.html">Xem lịch đấu</a></li>
+                    </ul>
+                </li>
+                <li><a href="./news.html">Tin tức</a></li>
+                <li><a href="./contact.html">Liên hệ</a></li>
+                <li class="phone-list"><a href="javascript:void(0);" onclick="formfunction_lgin()" class="js-phone-lgin">Đăng nhập</a></li>
+                <li class="phone-list"><a href="javascript:void(0);" onclick="formfunction()" class="js-phone-lgout">Đăng Ký</a></li>
+                <li class="phone-list"><a href="">Ngôn ngữ</a></li>
+            </ul>
+            <div id="btn-close-sub" class="mobile-close js-nav-close" onclick="closeFunction()">
+                <i class="fa-solid fa-xmark mb-close"></i>
+            </div>
+        
+       </div>
+        
+        
+    </div>
+
+    <div id="main">
+        <div id="slider">
+            <h1 class="slider-heading">Tin Tức</h1>
+        </div>
+        <div class="container col">
+            <div class="row">
+                <div class="card"> 
+                    <div class="item">
+                        <div class="img">
+                            <img src="../assets/image/image-banner/u18.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <h3>
+                                <a href="#"> U18 Hà Nội tham dự giải giao hữu U18 quốc tế tại Hàn Quốc</a>
+                            </h3>
+                            <div class="date">
+                                <span><i class="fa-solid fa-calendar-days"></i>
+                                    05/10/2022
+                                </span>
+                                <span><i class="fa-regular fa-comment"></i>
+                                    7 comments
+                                </span>
+                            </div>
+                            <p class="txt-content">Nhận lời mời của Hiệp hội bóng đá thành phố Seogwipo – Hàn Quốc, U18 Hà Nội dưới sự dẫn dắt của HLV Dương Hồng Sơn
+                            ...</p>
+                            <div class="readmore">
+                                <div><a href="#">READ MORE</a></div>
+                            </div>
+                        </div>
+                        
+        
+                    </div>
+                </div>
+                <div class="card"> 
+                    <div class="item">
+                        <div class="img">
+                            <img src="../assets/image/image-banner/tansinh.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <h3>
+                                <a href="#"> Huỳnh Tấn Sinh khoác áo CLB bóng đá Hà Nội</a>
+                            </h3>
+                            <div class="date">
+                                <span><i class="fa-solid fa-calendar-days"></i>
+                                    17/08/2022
+                                </span>
+                                <span><i class="fa-regular fa-comment"></i>
+                                    9 comments
+                                </span>
+                            </div>
+                            <p class="txt-content">Nhằm tăng cường sự vững chắc của hàng phòng ngự cho giai đoạn II, đặc biệt là khắc chế những tình huống chống bóng bổng
+                            ... </p>
+                            <div class="readmore">
+                                <div><a href="#">READ MORE</a></div>
+                            </div>
+                        </div>
+                        
+        
+                    </div>
+                </div>
+                <div class="card"> 
+                    <div class="item">
+                        <div class="img">
+                            <img src="../assets/image/image-banner/long-tuananh.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <h3>
+                                <a href="#"> Hậu vệ Vũ Tiến Long, tiền vệ Nguyễn Tuấn Anh ...</a>
+                            </h3>
+                            <div class="date">
+                                <span><i class="fa-solid fa-calendar-days"></i>
+                                    21/12/2022
+                                </span>
+                                <span><i class="fa-regular fa-comment"></i>
+                                    7 comments
+                                </span>
+                            </div>
+                            <p class="txt-content">CLB bóng đá Hà Nội đồng ý cho CLB Công An Nhân dân mượn hậu vệ Vũ Tiến Long và tiền vệ Nguyễn Tuấn Anh đến hết mùa giải
+                            2022. ... </p>
+                            <div class="readmore">
+                                <div><a href="#">READ MORE</a></div>
+                            </div>
+                        </div>
+                        
+        
+                    </div>
+                </div>
+            
+            
+                <div class="card"> 
+                    <div class="item">
+                        <div class="img">
+                            <img src="../assets/image/image-banner/lucaox-copy.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <h3>
+                                <a href="#"> CLB bóng đá Hà Nội bổ sung tiền đạo người ...</a>
+                            </h3>
+                            <div class="date">
+                                <span><i class="fa-solid fa-calendar-days"></i>
+                                    14/08/2022
+                                </span>
+                                <span><i class="fa-regular fa-comment"></i>
+                                    7 comments
+                                </span>
+                            </div>
+                            <p class="txt-content">Lucas Vinicius Goncalves Silva chính thức gia nhập đội bóng Thủ đô trong phần Lucas Vinicius Goncalves Silva chính thức gia nhập ... </p>
+                            <div class="readmore">
+                                <div><a href="#">READ MORE</a></div>
+                            </div>
+                        </div>
+                        
+        
+                    </div>
+                </div>
+                <div class="card"> 
+                    <div class="item">
+                        <div class="img">
+                            <img src="../assets/image/image-banner/thai-quy1.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <h3>
+                                <a href="#"> Hậu vệ Đặng Văn Tới chuyển tới CLB Hải Phòng</a>
+                            </h3>
+                            <div class="date">
+                                <span><i class="fa-solid fa-calendar-days"></i>
+                                    12/08/2022
+                                </span>
+                                <span><i class="fa-regular fa-comment"></i>
+                                    7 comments
+                                </span>
+                            </div>
+                            <p class="txt-content">Hậu vệ Đặng Văn Tới hoàn tất hợp đồng gia hạn chính thức gia nhập CLB Hải Phòng chính thức gia nhập CLB Hải Phòng ... </p>
+                            <div class="readmore">
+                                <div><a href="#">READ MORE</a></div>
+                            </div>
+                        </div>
+                        
+        
+                    </div>
+                </div>
+                <div class="card"> 
+                    <div class="item">
+                        <div class="img">
+                            <img src="../assets/image/image-banner/thanh-chung2.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <h3>
+                                <a href="#"> Hậu vệ Nguyễn Thành Chung gia hạn với đội ...</a>
+                            </h3>
+                            <div class="date">
+                                <span><i class="fa-solid fa-calendar-days"></i>
+                                    10/08/2022
+                                </span>
+                                <span><i class="fa-regular fa-comment"></i>
+                                    7 comments
+                                </span>
+                            </div>
+                            <p class="txt-content">CLB bóng đá Hà Nội và hậu vệ Nguyễn Thành Chung hoàn tất hợp đồng gia hạn đến chính thức gia nhập CLB Hải Phòng chính thức gia nhập CLB Hải Phòng ... </p>
+                            <div class="readmore">
+                                <div><a href="#">READ MORE</a></div>
+                            </div>
+                        </div>
+                        
+        
+                    </div>
+                </div>
+           
+           
+                <div class="card"> 
+                    <div class="item">
+                        <div class="img">
+                            <img src="../assets/image/image-banner/tranvandat.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <h3>
+                                <a href="#"> Trương Văn Thái Quý khoác áo đội bóng Thủ đô ...</a>
+                            </h3>
+                            <div class="date">
+                                <span><i class="fa-solid fa-calendar-days"></i>
+                                    04/08/2022
+                                </span>
+                                <span><i class="fa-regular fa-comment"></i>
+                                    7 comments
+                                </span>
+                            </div>
+                            <p class="txt-content">LTiền vệ Trương Văn Thái Quý chính thức đặt bút ký vào bản hợp đồng mới với CLB chính thức gia nhập CLB Hải Phòng ... </p>
+                            <div class="readmore">
+                                <div><a href="#">READ MORE</a></div>
+                            </div>
+                        </div>
+                        
+        
+                    </div>
+                </div>
+                <div class="card"> 
+                    <div class="item">
+                        <div class="img">
+                            <img src="../assets/image/image-banner/tansinh.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <h3>
+                                <a href="#"> Tiền vệ U23 Việt Nam Trần Văn Đạt chuyển đến ...</a>
+                            </h3>
+                            <div class="date">
+                                <span><i class="fa-solid fa-calendar-days"></i>
+                                    01/08/2022
+                                </span>
+                                <span><i class="fa-regular fa-comment"></i>
+                                    7 comments
+                                </span>
+                            </div>
+                            <p class="txt-content">CLB bóng đá Hà Nội đồng ý Trần Văn Đạt gia nhập đội bóng Công An Nhân Dân đến chính thức gia nhập CLB Hải Phòng ... </p>
+                            <div class="readmore">
+                                <div><a href="#">READ MORE</a></div>
+                            </div>
+                        </div>
+                        
+        
+                    </div>
+                </div>
+                <div class="card"> 
+                    <div class="item">
+                        <div class="img">
+                            <img src="../assets/image/image-banner/van-quyet2.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <h3>
+                                <a href="#"> Tiền vệ Nguyễn Văn Quyết lập kỷ lục mới ...</a>
+                            </h3>
+                            <div class="date">
+                                <span><i class="fa-solid fa-calendar-days"></i>
+                                    31/07/2022
+                                </span>
+                                <span><i class="fa-regular fa-comment"></i>
+                                    7 comments
+                                </span>
+                            </div>
+                            <p class="txt-content">Với pha lập công vào lưới Hồng Lĩnh Hà Tĩnh, đội trưởng đội bóng Thủ đô chính chính thức gia nhập CLB Hải Phòng ... </p>
+                            <div class="readmore">
+                                <div><a href="#">READ MORE</a></div>
+                            </div>
+                        </div>
+                        
+        
+                    </div>
+                </div>
+            </div>      
+        </div>
+        <div class="next-page">
+            <ul class="list-next-page">
+                <li class="list-it">
+                    <a href="#"><i class="fa-solid fa-angle-left"></i></a>
+                </li>
+                <li class="list-it">
+                    <a href="#">1</a>
+                </li>
+                <li class="list-it li-yellow">
+                    <a href="#">2</a>
+                </li>
+                <li class="list-it">
+                    <a href="#">3</a>
+                </li>
+                <li><a href="#">
+                    <i class="fa-solid fa-angle-right"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div id="footer">
+            <div class="footer-wrap">
+                <div class="row">
+                    <div class="contact-section ft-col">
+                        <h3>Liên hệ</h3>
+                        <ul class="info">
+                            <li class="ft-list">
+                                <i class="fa-solid fa-location-dot ft-icon"></i>
+                                <span>3 Đ. Cầu Giấy, Láng Thượng, Đống Đa, Hà Nội</span>
+                            </li>
+                            <li class="ft-list">
+                                <i class="fa-solid fa-phone ft-icon"></i>
+                                <span>+84123456789</span>
+                            </li>
+                            <li class="ft-list">
+                                <i class="fa-solid fa-envelope ft-icon"></i>
+                                <span>group9@gmail.com</span>
+                            </li>
+                            
+                        </ul>
+                        <div class="contact-social">
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="about-section ft-col">
+                        <h3>Website quản lý giải đấu</h3>
+                        <ul class="list-about">
+                            <li class="ft-list">
+                                <i class="fa-solid fa-angles-right ft-icon"></i>
+                                <a href="">Điều khoản sử dụng</a>
+                            </li>
+                            <li class="ft-list">
+                                <i class="fa-solid fa-angles-right ft-icon"></i>
+                                <a href="">Chính sách bảo mật</a>
+                            </li>
+                            <li class="ft-list">
+                                <i class="fa-solid fa-angles-right ft-icon"></i>
+                                <a href="">Chính sách bảo mật thông tin cá nhân</a>
+                            </li>
+                            <li class="ft-list">
+                                <i class="fa-solid fa-angles-right ft-icon"></i>
+                                <a href="">Chính sách thanh toán</a>
+                            </li>
+                            <li class="ft-list">
+                                <i class="fa-solid fa-angles-right ft-icon"></i>
+                                <a href="">Bảng giá</a>
+                            </li>
+                            <li class="ft-list">
+                                <i class="fa-solid fa-angles-right ft-icon"></i>
+                                <a href="">Liên hệ</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="update-section ft-col">
+                        <h3>Cập nhật</h3>
+                        <p>Đăng ký để được cập nhật và các ưu đãi mới nhất với bản tin của chúng tôi.</p>
+                        <input type="text" placeholder="Tên của bạn">
+                        <input type="text" placeholder="Địa chỉ email">
+                        <div class="ft-privacy">
+                            <span>Chúng tôi tôn trọng quyền riêng tư của bạn</span>
+                            <div>
+                                <button>Đăng ký</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright &copy; 2022 By: <span>Group_9</span></p>
+                </div>
+            </div>
+        </div> 
+    </div>
+     <!-- dang ky -->
+     <div id="js-modal" class="modal ">
+
+        <div onclick="closeform()" class="modal-overlay">
+
+        </div>
+        <div class="modal-body">
+            <div class="form-md">
+                <div class="form-md-container">
+                    <div class="form-md-header">
+                        <h3 class="form-md-heading">Đăng ký</h3>
+                        <span class="md-switch-btn">Đăng nhập</span>
+                    </div>
+                    <div class="form-md-body">
+                        <input type="text" class="form-md-input" placeholder="Nhập số điện thoại">
+                        <input type="password" class="form-md-input" placeholder="nhập mật khẩu">
+                        <input type="password" class="form-md-input" placeholder="Nhập lại mật khẩu">
+                    </div>
+                    <div class="form-md-aside">
+                        <p class="txt-policy">
+                            Bằng việc đăng ký, bạn đã đồng ý với chúng tôi về
+                            <a href="#" class="md-policy-link">Điều khoản dịch vụ</a> &
+                            <a href="#" class="md-policy-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+                    <div class="form-md-controls">
+                        <button class="btn" onclick="closeform()">TRỞ LẠI</button>
+                        <button class="btn btn-primary" onclick="closeform()">ĐĂNG KÝ </button>
+                    </div>
+                </div>
+                
+                <div class="form-md-socials">
+                    
+                    <a href="" class="md-btn-icon face">
+                        <i class="fa-brands fa-square-facebook md-social-icon"></i>
+                        Facebook
+                        
+                    </a>
+                    <a href="" class="md-btn-icon goo">
+                        <i class="fa-brands fa-google-plus-g md-social-icon"></i>
+                        Google
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- dang nhap -->
+    <div id="js-modal-lgin" class="modal-lgin ">
+
+        <div onclick="closeform()" class="modal-overlay">
+
+        </div>
+        <div class="modal-body">
+            <div class="form-md">
+                <div class="form-md-container">
+                    <div class="form-md-header">
+                        <h3 class="form-md-heading">Đăng nhập</h3>
+                        <span class="md-switch-btn">Đăng ký</span>
+                    </div>
+                    <div class="form-md-body">
+                        <input type="text" class="form-md-input" placeholder="Nhập số điện thoại">
+                        <input type="password" class="form-md-input" placeholder="nhập mật khẩu">
+                    </div>
+                    <div class="form-md-aside">
+                        <p class="txt-support">
+                            <a href="#" class="sp-link">Quên mật khẩu</a>
+                            <a href="#" class="help-link">Cần trợ giúp?</a>
+                        </p>
+                    </div>
+                    <div class="form-md-controls">
+                        <button class="btn" onclick="closeform()">TRỞ LẠI</button>
+                        <button class="btn btn-primary" onclick="closeform()">ĐĂNG NHẬP </button>
+                    </div>
+                </div>
+                
+                <div class="form-md-socials">
+                
+                    <a href="" class="md-btn-icon face">
+                        <i class="fa-brands fa-square-facebook md-social-icon"></i>
+                        Facebook
+                        
+                    </a>
+                    <a href="" class="md-btn-icon goo">
+                        <i class="fa-brands fa-google-plus-g md-social-icon"></i>
+                        Google
+                    </a>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- back to top -->
+    <div class="rocket">
+        <a href="#">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+    </div>
+    <script src="../assets/JS/form.js"></script>
+    <script src="../assets/JS/sidebar.js"></script>
+
+    
+</body>

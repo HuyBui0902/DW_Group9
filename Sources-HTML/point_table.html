@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="UTF-8">
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bảng xếp hạng</title>
+        <link rel="icon" type="image/x-icon" href="../assets/image/image-logo/logo.png">
+
+        <link rel="stylesheet" href="../assets/Sources-CSS/poin_table.css">
+        
+        <link rel="stylesheet" href="../assets/Sources-CSS/css-public.css">
+        <link rel="stylesheet" href="../assets/fontawesome-free-6.2.0-web/css/all.min.css">
+        <link rel="stylesheet" href="../assets/Sources-CSS/color.css">
+    <link rel="stylesheet" href="../assets/Sources-CSS/responsive.css">
+
+
+        
+    </head>
+    <body>
+        <div class="main">
+            <div id="header">
+                <div id="header-navbar">
+
+                    <div class="list-social">
+                        <ul class="icon-social">
+                            <li class="fab"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li class="twi"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li class="igr"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li class="lik"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li class="ytb"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                        
+                    </div>
+                    
+                    <div class="lang-with-sign">
+                        <select name="list-languge" id="languge">
+                                <option value="vietnam">VIE</option>
+                                <option value="english">ENG</option>
+                            
+                        </select>
+                    
+                        
+                        <div class="header-navbar-link">
+                            <a href="javascript:void(0);" class="sign js-sign_in" onclick = "formfunction_lgin()">Đăng nhập</a>
+                            <span></span>
+                            <a href="javascript:void(0);" class="sign js-sign_up" onclick = "formfunction()">Đăng ký</a>
+                
+                        </div>
+                    </div>
+        
+                </div>
+                
+                <div class="logo-nav">
+                    <a href="#" class="logo">
+                        <img src="../assets/image/image-logo/logo.png" alt="" class="logo-img">
+                        <span>VLEAGUE</span>
+                    </a>
+       
+                    <ul id="nav">
+                        <li><a href="./index.html">Trang chủ</a></li>
+                        <li>
+                            <a href="javascript:void(0);">Giải đấu</a>
+                            <ul class="subnav">
+                                <li><a href="./point_table.html">Bảng xếp hạng</a></li>
+                                <li><a href="./schedule.html">Xem lịch đấu</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./news.html">Tin tức</a></li>
+                        <li><a href="./contact.html">Liên hệ</a></li>
+                    </ul>
+                    <button class="hd-bars js-bars">
+                        <i class="fa-sharp fa-solid fa-bars "></i>
+
+                    </button>
+                </div>
+                <div class="nav-mobile-overlay js-nav-overlay">
+
+                </div>
+                <div class="nav-mobile js-nav-mobile">
+                    <ul class="nav-mobile-list">
+                        <li><a href="./index.html">Trang chủ</a></li>
+                        <li>
+                            <a href="javascript:void(0);"  onclick="myFunction()">
+                                Giải đấu
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>    
+                            <ul id="js-sub" class="subnav-mobile">
+                                <li><a href="./point_table.html">Bảng xếp hạng</a></li>
+                                <li><a href="./schedule.html">Xem lịch đấu</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./news.html">Tin tức</a></li>
+                        <li><a href="./contact.html">Liên hệ</a></li>
+                        <li class="phone-list"><a href="javascript:void(0);" onclick="formfunction_lgin()" class="js-phone-lgin">Đăng nhập</a></li>
+                        <li class="phone-list"><a href="javascript:void(0);" onclick="formfunction()" class="js-phone-lgout">Đăng Ký</a></li>
+                        <li class="phone-list"><a href="">Ngôn ngữ</a></li>
+                    </ul>
+                    <div id="btn-close-sub" class="mobile-close js-nav-close" onclick="closeFunction()">
+                        <i class="fa-solid fa-xmark mb-close"></i>
+                    </div>
+                
+               </div>
+                
+                
+            </div>
+            <div id="slider">
+                <h1 class="posster1">Bảng Xếp Hạng</h1>
+            </div>
+
+            <div class="tablecontainer col">
+                <div class="wrapp">
+                    <div style="overflow-x:auto;">
+                        <table>
+                            <thead>
+                                <tr class="tde">
+                                    <th >Pos</th>
+                                    
+                                    <th>Team</th>
+                                    <th>P</th>
+                                    <th>W</th>
+                                    <th>D</th>
+                                    <th>L</th>
+                                    <th>F</th>
+                                    <th>A</th>
+                                    <th>HS</th>
+                                    <th>PST</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+        
+                        
+                                <tr class="mau1">
+                                <td>1</td>
+                            
+                                <td>
+                                    <img src="../assets/image/image-teams/HN.png" alt="">
+                                    <strong>Hà Nội</strong>
+                                </td>
+                                <td>16</td>
+                                <td>10</td>
+                                <td>4</td>
+                                <td>2</td>
+                                <td>26</td>
+                                <td>14</td>
+                                <td>+12</td>
+                                <td>
+                                    <strong>34</strong>
+                                </td>
+                                </tr>
+                                <tr class="mau">
+                                    <td>2</td>
+                
+                                    <td>
+                                        <img src="../assets/image/image-teams/viettel.png" alt="">
+                                        <strong>Viettel</strong>
+                                    </td>
+                                    <td>16</td>
+                                    <td>9</td>
+                                    <td>1</td>
+                                    <td>6</td>
+                                    <td>22</td>
+                                    <td>11</td>
+                                    <td>+11</td>
+                                    <td>
+                                        <strong>28</strong>
+                                    </td>
+                                </tr>
+                                <tr class="mau1">
+                                    <td>3</td>
+                                
+                                    <td>
+                                        <img src="../assets/image/image-teams/haiphong.png" alt="">
+                                        <strong>Hải Phòng</strong>
+                                    </td>
+                                    <td>16</td>
+                                    <td>8</td>
+                                    <td>4</td>
+                                    <td>4</td>
+                                    <td>25</td>
+                                    <td>20</td>
+                                    <td>+5</td>
+                                    <td>
+                                        <strong>28</strong>
+                                    </td>
+                                </tr>
+                                <tr class="mau">
+                                    <td>4</td>
+                                    
+                                    <td>
+                                        <img src="../assets/image/image-teams/binh-dinh.png" alt="">
+                                        <strong>Bình Định</strong>
+                                    </td>
+                                    <td>16</td>
+                                    <td>8</td>
+                                    <td>3</td>
+                                    <td>5</td>
+                                    <td>25</td>
+                                    <td>19</td>
+                                    <td>+6</td>
+                                    <td>
+                                        <strong>27</strong>
+                                    </td>
+                                </tr>
+                                <tr class="mau1">
+                                    <td >5</td>
+                                    
+                                    <td>
+                                        <img src="../assets/image/image-teams/hagl.png" alt="">
+                                        <strong>Hoàng Anh Gia Lai</strong>
+                                    </td>
+                                    <td>16</td>
+                                    <td>5</td>
+                                    <td>7</td>
+                                    <td>3</td>
+                                    <td>16</td>
+                                    <td>13</td>
+                                    <td>+3</td>
+                                    <td>
+                                        <strong>22</strong>
+                                    </td>
+                                </tr>
+                                <tr class="mau">
+                                    <td>6</td>
+                                    
+                                    <td>
+                                        <img src="../assets/image/image-teams/slna.png" alt="">
+                                        <strong>Sông Lam Nghệ An</strong>
+                                    </td>
+                                    <td>16</td>
+                                    <td>6</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                    <td>17</td>
+                                    <td>16</td>
+                                    <td>+1</td>
+                                    <td>
+                                        <strong>22</strong>
+                                    </td>
+                                </tr>
+                                <tr class="mau1">
+                                    <td>7</td>
+                                    
+                                    <td>
+                                        <img src="../assets/image/image-teams/thanh-hoa.png" alt="">
+                                        <strong>Thanh Hóa</strong>
+                                    </td>
+                                    <td>15</td>
+                                    <td>6</td>
+                                    <td>3</td>
+                                    <td>6</td>
+                                    <td>18</td>
+                                    <td>13</td>
+                                    <td>+5</td>
+                                    <td>
+                                        <strong>21</strong>
+                                    </td>
+                                </tr>
+                                <tr class="mau">
+                                    <td>8</td>
+                                    
+                                    <td>
+                                        <img src="../assets/image/image-teams/namdinh.png" alt="">
+                                        <strong>Nam Định</strong>
+                                    </td>
+                                    <td>16</td>
+                                    <td>5</td>
+                                    <td>4</td>
+                                    <td>7</td>
+                                    <td>14</td>
+                                    <td>19</td>
+                                    <td>-5</td>
+                                    <td>
+                                        <strong>19</strong>
+                                    </td>
+                                </tr>
+                                <tr class="mau1">
+                                    <td>9</td>
+                                    
+                                    <td>
+                                        <img src="../assets/image/image-teams/bd.png" alt="">
+                                        <strong>Bình Dương</strong>
+                                    </td>
+                                    <td>16</td>
+                                    <td>5</td>
+                                    <td>4</td>
+                                    <td>7</td>
+                                    <td>19</td>
+                                    <td>29</td>
+                                    <td>-10</td>
+                                    <td>
+                                        <strong>19</strong>
+                                    </td>
+                                </tr>
+                                <tr class="mau">
+                                    <td>10</td>
+                                    
+                                    <td>
+                                        <img src="../assets/image/image-teams/dn.png" alt="">
+                                        <strong>Đà Nẵng</strong>
+                                    </td>
+                                    <td>15</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>15</td>
+                                    <td>20</td>
+                                    <td>-5</td>
+                                    <td>
+                                        <strong>17</strong>
+                                    </td>
+                                </tr>
+                                <tr class="mau1">
+                                    <td>11</td>
+                                    
+                                    <td>
+                                        <img src="../assets/image/image-teams/ha-tinh.png" alt="">
+                                        <strong>Hồng Lĩnh Hà Tĩnh</strong>
+                                    </td>
+                                    <td>15</td>
+                                    <td>4</td>
+                                    <td>3</td>
+                                    <td>8</td>
+                                    <td>17</td>
+                                    <td>22</td>
+                                    <td>-5</td>
+                                    <td>
+                                        <strong>15</strong>
+                                    </td>
+                                </tr>
+                                <tr class="mau">
+                                    <td>12</td>
+                                    
+                                    <td>
+                                        <img src="../assets/image/image-teams/saigon.png" alt="">
+                                        <strong>Sài Gòn</strong>
+                                    </td>
+                                    <td>16</td>
+                                    <td>3</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td>21</td>
+                                    <td>30</td>
+                                    <td>-9</td>
+                                    <td>
+                                        <strong>15</strong>
+                                    </td>
+                                </tr>
+                                <tr class="mau1">
+                                    <td>13</td>
+                                    
+                                    <td>
+                                        <img src="../assets/image/image-teams/tphcm.png" alt="">
+                                        <strong>Hồ Chí Minh City</strong>
+                                    </td>
+                                    <td>16</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>9</td>
+                                    <td>13</td>
+                                    <td>22</td>
+                                    <td>-9</td>
+                                    <td>
+                                        <strong>13</strong>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        
+            <div id="footer">
+                <div class="footer-wrap">
+                    <div class="row">
+                        <div class="contact-section ft-col">
+                            <h3>Liên hệ</h3>
+                            <ul class="info">
+                                <li class="ft-list">
+                                    <i class="fa-solid fa-location-dot ft-icon"></i>
+                                    <span>3 Đ. Cầu Giấy, Láng Thượng, Đống Đa, Hà Nội</span>
+                                </li>
+                                <li class="ft-list">
+                                    <i class="fa-solid fa-phone ft-icon"></i>
+                                    <span>+84123456789</span>
+                                </li>
+                                <li class="ft-list">
+                                    <i class="fa-solid fa-envelope ft-icon"></i>
+                                    <span>group9@gmail.com</span>
+                                </li>
+                                
+                            </ul>
+                            <div class="contact-social">
+                                <ul>
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        <div class="about-section ft-col">
+                            <h3>Website quản lý giải đấu</h3>
+                            <ul class="list-about">
+                                <li class="ft-list">
+                                    <i class="fa-solid fa-angles-right ft-icon"></i>
+                                    <a href="">Điều khoản sử dụng</a>
+                                </li>
+                                <li class="ft-list">
+                                    <i class="fa-solid fa-angles-right ft-icon"></i>
+                                    <a href="">Chính sách bảo mật</a>
+                                </li>
+                                <li class="ft-list">
+                                    <i class="fa-solid fa-angles-right ft-icon"></i>
+                                    <a href="">Chính sách bảo mật thông tin cá nhân</a>
+                                </li>
+                                <li class="ft-list">
+                                    <i class="fa-solid fa-angles-right ft-icon"></i>
+                                    <a href="">Chính sách thanh toán</a>
+                                </li>
+                                <li class="ft-list">
+                                    <i class="fa-solid fa-angles-right ft-icon"></i>
+                                    <a href="">Bảng giá</a>
+                                </li>
+                                <li class="ft-list">
+                                    <i class="fa-solid fa-angles-right ft-icon"></i>
+                                    <a href="">Liên hệ</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <div class="update-section ft-col">
+                            <h3>Cập nhật</h3>
+                            <p>Đăng ký để được cập nhật và các ưu đãi mới nhất với bản tin của chúng tôi.</p>
+                            <input type="text" placeholder="Tên của bạn">
+                            <input type="text" placeholder="Địa chỉ email">
+                            <div class="ft-privacy">
+                                <span>Chúng tôi tôn trọng quyền riêng tư của bạn</span>
+                                <div>
+                                    <button>Đăng ký</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p>Copyright &copy; 2022 By: <span>Group_9</span></p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+         <!-- dang ky -->
+         <div id="js-modal" class="modal ">
+
+            <div onclick="closeform()" class="modal-overlay">
+
+            </div>
+            <div class="modal-body">
+                <div class="form-md">
+                    <div class="form-md-container">
+                        <div class="form-md-header">
+                            <h3 class="form-md-heading">Đăng ký</h3>
+                            <span class="md-switch-btn">Đăng nhập</span>
+                        </div>
+                        <div class="form-md-body">
+                            <input type="text" class="form-md-input" placeholder="Nhập số điện thoại">
+                            <input type="password" class="form-md-input" placeholder="nhập mật khẩu">
+                            <input type="password" class="form-md-input" placeholder="Nhập lại mật khẩu">
+                        </div>
+                        <div class="form-md-aside">
+                            <p class="txt-policy">
+                                Bằng việc đăng ký, bạn đã đồng ý với chúng tôi về
+                                <a href="#" class="md-policy-link">Điều khoản dịch vụ</a> &
+                                <a href="#" class="md-policy-link">Chính sách bảo mật</a>
+                            </p>
+                        </div>
+                        <div class="form-md-controls">
+                            <button class="btn" onclick="closeform()">TRỞ LẠI</button>
+                            <button class="btn btn-primary" onclick="closeform()">ĐĂNG KÝ </button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-md-socials">
+                        
+                        <a href="" class="md-btn-icon face">
+                            <i class="fa-brands fa-square-facebook md-social-icon"></i>
+                            Facebook
+                            
+                        </a>
+                        <a href="" class="md-btn-icon goo">
+                            <i class="fa-brands fa-google-plus-g md-social-icon"></i>
+                            Google
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- dang nhap -->
+        <div id="js-modal-lgin" class="modal-lgin ">
+
+            <div onclick="closeform()" class="modal-overlay">
+
+            </div>
+            <div class="modal-body">
+                <div class="form-md">
+                    <div class="form-md-container">
+                        <div class="form-md-header">
+                            <h3 class="form-md-heading">Đăng nhập</h3>
+                            <span class="md-switch-btn">Đăng ký</span>
+                        </div>
+                        <div class="form-md-body">
+                            <input type="text" class="form-md-input" placeholder="Nhập số điện thoại">
+                            <input type="password" class="form-md-input" placeholder="nhập mật khẩu">
+                        </div>
+                        <div class="form-md-aside">
+                            <p class="txt-support">
+                                <a href="#" class="sp-link">Quên mật khẩu</a>
+                                <a href="#" class="help-link">Cần trợ giúp?</a>
+                            </p>
+                        </div>
+                        <div class="form-md-controls">
+                            <button class="btn" onclick="closeform()">TRỞ LẠI</button>
+                            <button class="btn btn-primary" onclick="closeform()">ĐĂNG NHẬP </button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-md-socials">
+                    
+                        <a href="" class="md-btn-icon face">
+                            <i class="fa-brands fa-square-facebook md-social-icon"></i>
+                            Facebook
+                            
+                        </a>
+                        <a href="" class="md-btn-icon goo">
+                            <i class="fa-brands fa-google-plus-g md-social-icon"></i>
+                            Google
+                        </a>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- back to top -->
+        <div class="rocket">
+            <a href="#">
+                <i class="fa-solid fa-angles-up"></i>
+            </a>
+        </div>
+        <script src="../assets/JS/form.js"></script>
+        <script src="../assets/JS/sidebar.js"></script>
+
+    </body>
+</html>

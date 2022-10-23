@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>football league</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="../assets/image/image-logo/logo.png">
+        <link rel="stylesheet" href="../assets/Sources-CSS/style.css">
+       
+        <link rel="stylesheet" href="../assets/Sources-CSS/color.css">
+
+        <link rel="stylesheet" href="../assets/fontawesome-free-6.2.0-web/css/all.min.css">
+        <link rel="stylesheet" href="../assets/Sources-CSS/css-public.css">
+        <link rel="stylesheet" href="../assets/Sources-CSS/responsive.css">
+        
+
+        
+        
+    </head>
+    <body>
+        <div id="main">
+            <div id="header">
+                <div id="header-navbar">
+
+                    <div class="list-social">
+                        <ul class="icon-social">
+                            <li class="fab"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li class="twi"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li class="igr"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li class="lik"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li class="ytb"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                        
+                    </div>
+                    
+                    <div class="lang-with-sign">
+                        <select name="list-languge" id="languge">
+                                <option value="vietnam">VIE</option>
+                                <option value="english">ENG</option>
+                            
+                        </select>
+                    
+                        
+                        <div class="header-navbar-link">
+                            <a href="javascript:void(0);" class="sign js-sign_in" onclick = "formfunction_lgin()">Đăng nhập</a>
+                            <span></span>
+                            <a href="javascript:void(0);" class="sign js-sign_up" onclick = "formfunction()">Đăng ký</a>
+                
+                        </div>
+                    </div>
+        
+                </div>
+                
+                <div class="logo-nav">
+                    <a href="#" class="logo">
+                        <img src="../assets/image/image-logo/logo.png" alt="" class="logo-img">
+                        <span>VLEAGUE</span>
+                    </a>
+       
+                    <ul id="nav">
+                        <li><a href="#">Trang chủ</a></li>
+                        <li>
+                            <a href="javascript:void(0);">Giải đấu</a>
+                            <ul class="subnav">
+                                <li><a href="./point_table.html">Bảng xếp hạng</a></li>
+                                <li><a href="./schedule.html">Xem lịch đấu</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./news.html">Tin tức</a></li>
+                        <li><a href="./contact.html">Liên hệ</a></li>
+                    </ul>
+                    <button class="hd-bars js-bars">
+                        <i class="fa-sharp fa-solid fa-bars "></i>
+
+                    </button>
+                </div>
+                <div class="nav-mobile-overlay js-nav-overlay">
+
+                </div>
+                <div class="nav-mobile js-nav-mobile">
+                    <ul class="nav-mobile-list">
+                        <li><a href="#">Trang chủ</a></li>
+                        <li>
+                            <a href="javascript:void(0);"  onclick="myFunction()">
+                                Giải đấu
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>    
+                            <ul id="js-sub" class="subnav-mobile">
+                                <li><a href="./point_table.html">Bảng xếp hạng</a></li>
+                                <li><a href="./schedule.html">Xem lịch đấu</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./news.html">Tin tức</a></li>
+                        <li><a href="./contact.html">Liên hệ</a></li>
+                        <li class="phone-list"><a href="javascript:void(0);" onclick="formfunction_lgin()" class="js-phone-lgin">Đăng nhập</a></li>
+                        <li class="phone-list"><a href="javascript:void(0);" onclick="formfunction()" class="js-phone-lgout">Đăng Ký</a></li>
+                        <li class="phone-list"><a href="">Ngôn ngữ</a></li>
+                    </ul>
+                    <div id="btn-close-sub" class="mobile-close js-nav-close" onclick="closeFunction()">
+                        <i class="fa-solid fa-xmark mb-close"></i>
+                    </div>
+                
+               </div>
+                
+                
+            </div>
+
+            <div id="slider" class="slider-home">
+                <div class="txt-section">
+                    <h1 class="txt-heading">hệ thống quản lý giải đấu chuyên nghiệp</h1>
+                    <div class="search">
+                        <div class="search-wrp">
+                            <input type="text" name="key" placeholder="Tìm kiếm giải đấu của bạn" autocomplete="off">
+                            <button class="search-btn">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+
+            </div>
+           
+            <div id="content">
+
+                <div id="systems-section">
+
+                    <div class="systems-header">
+                        <h1 class="sys-heading">Hỗ trợ nhiều thể thức thi đấu</h1>
+                        <p class="sys-txt">VLEAGUE giúp người dùng tạo ra các giải đấu có thể thức giống như
+                        với các giải đấu nổi tiếng thế giới như Champions League, World Cup, NBA, Laliga, ATP Cup ...</p>
+                    </div>
+                
+                    <div class="column-layout">
+                        <div class="wrap">
+                             <div class="column-items col-1" >
+                            
+                                <h3 class="column-item-heading">Loại trực tiếp</h3>
+                                <div class="column-item-type">
+                                    <img src="../assets/image/image-logo/type-1.png" alt="type" class="img-type">
+                                </div>
+                                <p class="column-item-txt">
+                                    Loại trực tiếp hoặc knockout
+                                    là loại giải đấu có đội thua
+                                    ở mỗi trận đấu
+                                    sẽ bị loại ngay khỏi giải đấu.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <div class="column-items col-2">
+                            
+                                <h3 class="column-item-heading">Đấu vòng tròn</h3>
+                                <div class="column-item-type">
+                                    <img src="../assets/image/image-logo/type-2.png" alt="type" class="img-type">
+                                </div>
+                                <p class="column-item-txt">
+                                    Mỗi đội sẽ thi đấu
+                                    với tất cả các đội còn lại.
+                                    Cho phép tuỳ chỉnh
+                                    điều lệ xếp hạng dễ dàng.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <div class="column-items col-3">
+                            
+                                <h3 class="column-item-heading">Vòng tròn - Loại trực tiếp</h3>
+                                <div class="column-item-type">
+                                    <img src="../assets/image/image-logo/type-3.png" alt="type" class="img-type">
+                                </div>
+                            
+                                <p class="column-item-txt">
+                                    Kết hợp hai giai đoạn
+                                    vào một giải đấu, bao gồm
+                                    giai đoạn một đấu vòng tròn
+                                    và giai đoạn hai loại trực tiếp.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <div class="column-items col-4">
+                            
+                                <h3 class="column-item-heading">Chia bảng đấu</h3>
+                                <div class="column-item-type">
+                                    <img src="../assets/image/image-logo/type-4.png" alt="type" class="img-type">
+                                </div>
+                                <p class="column-item-txt">
+                                    Có hai giai đoạn đó là
+                                    giai đoạn một
+                                    chia thành nhiều bảng đấu
+                                    và giai đoạn hai là loại trực tiếp.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="button">
+                        <a href="#" class="btn-sign-up">Đăng ký</a>
+                        <a href="#" class="btn-create">Tạo giải đấu</a>
+                    </div>
+
+                </div>
+                
+                <div id="clients-section">
+                    <div class="clients-wrap">
+                        <div class="clients-header">
+                            <h1 class="clients-heading">Người dùng chia sẻ</h1>
+                        </div>
+
+                        <div class="clients-body">
+                            <div class="clients-items">
+                                <div class="cln-col">
+                                    <p class="comments"><i class="fa-solid fa-quote-left" style="font-size: 32px; " ></i>
+                                        Hệ thống được xây dựng rất chuyên nghiệp, đúng với các quy định trong thi đấu. Ban quản trị nhiệt tình và thường có hỗ trợ cho những đơn vị sử dụng hệ thống trong việc tổ chức giải thi đấu một cách nhanh chóng, kịp thời và hiệu quả. Tks Admin và ban quản trị...^^</p>
+                                    
+                                    <div class="info-client">
+                                        <div class="avt-with-txt">
+                                            <div  class="client-avatar">
+                                                <img src="../assets/image/image-logo/avatar.jpg" alt="avatar" class="img-avatar">
+                                            </div>
+                                            <div class="info-txt">
+                                                <p class="name-client">Bùi Huy</p>
+                                                <p class="address-client">IT3 - UTC</p>
+                                            </div>
+                                        </div>
+                                        <div >
+                                            <ul class="vote">
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                            </ul>
+                                            <p class="reviews">(7 reviews)</p>
+                                        </div>
+                                        
+                                    </div> 
+                                </div> 
+                            </div>
+                            <div class="clients-items">
+                                <div class="cln-col">
+                                    <p class="comments"><i class="fa-solid fa-quote-left" style="font-size: 32px; " ></i>
+                                        Hệ thống được xây dựng rất chuyên nghiệp, đúng với các quy định trong thi đấu. Ban quản trị nhiệt tình và thường có hỗ trợ cho những đơn vị sử dụng hệ thống trong việc tổ chức giải thi đấu một cách nhanh chóng, kịp thời và hiệu quả. Tks Admin và ban quản trị...^^</p>
+                                    
+                                    <div class="info-client">
+                                        <div class="avt-with-txt">
+                                            <div  class="client-avatar">
+                                                <img src="../assets/image/image-logo/avatar.jpg" alt="avatar" class="img-avatar">
+                                            </div>
+                                            <div class="info-txt">
+                                                <p class="name-client">Bùi Huy</p>
+                                                <p class="address-client">IT3 - UTC</p>
+                                            </div>
+                                        </div>
+                                        <div >
+                                            <ul class="vote">
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                            </ul>
+                                            <p class="reviews">(7 reviews)</p>
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="clients-items">
+                                <div class="cln-col">
+                                    <p class="comments"><i class="fa-solid fa-quote-left" style="font-size: 32px; " ></i>
+                                        Hệ thống được xây dựng rất chuyên nghiệp, đúng với các quy định trong thi đấu. Ban quản trị nhiệt tình và thường có hỗ trợ cho những đơn vị sử dụng hệ thống trong việc tổ chức giải thi đấu một cách nhanh chóng, kịp thời và hiệu quả. Tks Admin và ban quản trị...^^</p>
+                                    
+                                    <div class="info-client">
+                                        <div class="avt-with-txt">
+                                            <div  class="client-avatar">
+                                                <img src="../assets/image/image-logo/avatar.jpg" alt="avatar" class="img-avatar">
+                                            </div>
+                                            <div class="info-txt">
+                                                <p class="name-client">Bùi Huy</p>
+                                                <p class="address-client">IT3 - UTC</p>
+                                            </div>
+                                        </div>
+                                        <div >
+                                            <ul class="vote">
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                            </ul>
+                                            <p class="reviews">(7 reviews)</p>
+                                        </div>
+                                    </div> 
+                                </div> 
+                            </div>  
+                        </div>
+                    </div>
+                </div>  
+                
+                <div id="tournament-section">
+                    
+                        <div class="tournament-header">
+                            <h1 class="tour-heading">Các bước điểu hành giải</h1>
+                            <p>Có 3 bước điều hành giải</p>
+                        </div>
+                        <div class="tournament-steps">
+                            <div class="wrap-tour">
+                                <div class="tournament-items step-1">
+                                    <div class="step-icon">
+                                        <i style="color: #fff; font-size: 20px; font-weight: bold;" class="icon-with-num fa-solid fa-list"></i>
+                                        <div class="number">1</div>
+                                    </div>
+                                    <h4>Tạo giải đấu</h4>
+                                    <ul class="list-items">
+                                        <li class="ft-list"><i class="fa-solid fa-check ft-icon" style="color: green; font-weight: bold;"></i>Loại trực tiếp</li>
+                                        <li class="ft-list"><i class="fa-solid fa-check ft-icon" style="color: green; font-weight: bold;"></i>Đấu vòng tròn</li>
+                                        <li class="ft-list"><i class="fa-solid fa-check ft-icon" style="color: green; font-weight: bold;"></i>Chia bảng đấu</li>
+                                        <li class="ft-list"><i class="fa-solid fa-check ft-icon" style="color: green; font-weight: bold;"></i>Vòng tròn - Loại trực tiếp</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="wrap-tour">
+                                <div class="tournament-items step-2">
+                                    <div class="step-icon">
+                                        <i style="color: #fff; font-size: 20px; font-weight: bold;" class="icon-with-num fa-solid fa-gear"></i>
+                                        <div class="number">2</div>
+                                    </div>
+                                    <h4>Tùy chỉnh giải đấu</h4>
+                                    <ul class="list-items">
+                                        <li class="ft-list"><i class="fa-solid fa-check ft-icon" style="color: green; font-weight: bold;"></i>Nhập điều lệ, logo, địa điểm</li>
+                                        <li class="ft-list"><i class="fa-solid fa-check ft-icon" style="color: green; font-weight: bold;"></i>Nhập thông tin của đội/cầu thủ</li>
+                                        <li class="ft-list"><i class="fa-solid fa-check ft-icon" style="color: green; font-weight: bold;"></i>Mời người tham gia</li>
+                                        <li class="ft-list"><i class="fa-solid fa-check ft-icon" style="color: green; font-weight: bold;"></i>Đặt lịch cho các trận đấu</li>
+                                        <li class="ft-list"><i class="fa-solid fa-check ft-icon" style="color: green; font-weight: bold;"></i>Tùy chỉnh giai đoạn</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="wrap-tour">
+                                <div class="tournament-items step-3">
+                                    <div class="step-icon">
+                                        <i style="color: #fff; font-size: 20px; font-weight: bold;" class="icon-with-num fa-solid fa-square-check"></i>
+                                        <div class="number">3</div>
+                                    </div>
+                                    <h4>Điều hành giải</h4>
+                                    <ul class="list-items">
+                                        <li class="ft-list"><i class="fa-solid fa-check ft-icon" style="color: green; font-weight: bold;"></i>Kích hoạt</li>
+                                        <li class="ft-list"><i class="fa-solid fa-check ft-icon" style="color: green; font-weight: bold;"></i>Nhập tỷ số</li>
+                                        <li class="ft-list"><i class="fa-solid fa-check ft-icon" style="color: green; font-weight: bold;"></i>Xem thống kê</li>
+                                        <li class="ft-list"><i class="fa-solid fa-check ft-icon" style="color: green; font-weight: bold;"></i>Chia sẻ vơi bạn bè</li>
+                                    </ul>
+                                </div>   
+                            </div>        
+                        </div>
+                    
+                </div>  
+                <div class="box-section">
+                    <div class="box-wrap">
+                        <div class="box-col">
+                            <div class="manager">
+                                <h2>Trở thành người quản lý giải đấu</h2>
+                                <p>Là người quản lý nhóm, bạn có thể tạo, quản lý các thành viên trong nhóm của mình, tương tác với các nhóm khác và theo dõi tất cả các hoạt động của nhóm.</p>
+                                <span ><a href="" class="btn-create">Tạo nhóm</a></span>
+                            </div>
+                            <div class="share">
+                                <h2>Chia sẻ với bạn bè</h2>
+                                <p>Hãy chia sẻ những giải đấu hấp dẫn qua các mạng xã hội trên internet để thảo luận với những người cùng quan tâm.</p>
+                                <button><i class="fa-solid fa-thumbs-up"></i>Thích</button>
+                                <button>Chia sẻ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer">
+                <div class="footer-wrap">
+                    <div class="row">
+                        <div class="contact-section ft-col">
+                            <h3>Liên hệ</h3>
+                            <ul class="info">
+                                <li class="ft-list">
+                                    <i class="fa-solid fa-location-dot ft-icon"></i>
+                                    <span>3 Đ. Cầu Giấy, Láng Thượng, Đống Đa, Hà Nội</span>
+                                </li>
+                                <li class="ft-list">
+                                    <i class="fa-solid fa-phone ft-icon"></i>
+                                    <span>+84123456789</span>
+                                </li>
+                                <li class="ft-list">
+                                    <i class="fa-solid fa-envelope ft-icon"></i>
+                                    <span>group9@gmail.com</span>
+                                </li>
+                                
+                            </ul>
+                            <div class="contact-social">
+                                <ul>
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        <div class="about-section ft-col">
+                            <h3>Website quản lý giải đấu</h3>
+                            <ul class="list-about">
+                                <li class="ft-list">
+                                    <i class="fa-solid fa-angles-right ft-icon"></i>
+                                    <a href="">Điều khoản sử dụng</a>
+                                </li>
+                                <li class="ft-list">
+                                    <i class="fa-solid fa-angles-right ft-icon"></i>
+                                    <a href="">Chính sách bảo mật</a>
+                                </li>
+                                <li class="ft-list">
+                                    <i class="fa-solid fa-angles-right ft-icon"></i>
+                                    <a href="">Chính sách bảo mật thông tin cá nhân</a>
+                                </li>
+                                <li class="ft-list">
+                                    <i class="fa-solid fa-angles-right ft-icon"></i>
+                                    <a href="">Chính sách thanh toán</a>
+                                </li>
+                                <li class="ft-list">
+                                    <i class="fa-solid fa-angles-right ft-icon"></i>
+                                    <a href="">Bảng giá</a>
+                                </li>
+                                <li class="ft-list">
+                                    <i class="fa-solid fa-angles-right ft-icon"></i>
+                                    <a href="">Liên hệ</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <div class="update-section ft-col">
+                            <h3>Cập nhật</h3>
+                            <p>Đăng ký để được cập nhật và các ưu đãi mới nhất với bản tin của chúng tôi.</p>
+                            <input type="text" placeholder="Tên của bạn">
+                            <input type="text" placeholder="Địa chỉ email">
+                            <div class="ft-privacy">
+                                <span>Chúng tôi tôn trọng quyền riêng tư của bạn</span>
+                                <div>
+                                    <button>Đăng ký</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p>Copyright &copy; 2022 By: <span>Group_9</span></p>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <!-- dang ky -->
+        <div id="js-modal" class="modal ">
+
+            <div onclick="closeform()" class="modal-overlay">
+
+            </div>
+            <div class="modal-body">
+                <div class="form-md">
+                    <div class="form-md-container">
+                        <div class="form-md-header">
+                            <h3 class="form-md-heading">Đăng ký</h3>
+                            <span class="md-switch-btn">Đăng nhập</span>
+                        </div>
+                        <div class="form-md-body">
+                            <input type="text" class="form-md-input" placeholder="Nhập số điện thoại">
+                            <input type="password" class="form-md-input" placeholder="nhập mật khẩu">
+                            <input type="password" class="form-md-input" placeholder="Nhập lại mật khẩu">
+                        </div>
+                        <div class="form-md-aside">
+                            <p class="txt-policy">
+                                Bằng việc đăng ký, bạn đã đồng ý với chúng tôi về
+                                <a href="#" class="md-policy-link">Điều khoản dịch vụ</a> &
+                                <a href="#" class="md-policy-link">Chính sách bảo mật</a>
+                            </p>
+                        </div>
+                        <div class="form-md-controls">
+                            <button class="btn" onclick="closeform()">TRỞ LẠI</button>
+                            <button class="btn btn-primary" onclick="closeform()">ĐĂNG KÝ </button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-md-socials">
+                        
+                        <a href="" class="md-btn-icon face">
+                            <i class="fa-brands fa-square-facebook md-social-icon"></i>
+                            Facebook
+                            
+                        </a>
+                        <a href="" class="md-btn-icon goo">
+                            <i class="fa-brands fa-google-plus-g md-social-icon"></i>
+                            Google
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- dang nhap -->
+        <div id="js-modal-lgin" class="modal-lgin ">
+
+            <div onclick="closeform()" class="modal-overlay">
+
+            </div>
+            <div class="modal-body">
+                <div class="form-md">
+                    <div class="form-md-container">
+                        <div class="form-md-header">
+                            <h3 class="form-md-heading">Đăng nhập</h3>
+                            <span class="md-switch-btn">Đăng ký</span>
+                        </div>
+                        <div class="form-md-body">
+                            <input type="text" class="form-md-input" placeholder="Nhập số điện thoại">
+                            <input type="password" class="form-md-input" placeholder="nhập mật khẩu">
+                        </div>
+                        <div class="form-md-aside">
+                            <p class="txt-support">
+                                <a href="#" class="sp-link">Quên mật khẩu</a>
+                                <a href="#" class="help-link">Cần trợ giúp?</a>
+                            </p>
+                        </div>
+                        <div class="form-md-controls">
+                            <button class="btn" onclick="closeform()">TRỞ LẠI</button>
+                            <button class="btn btn-primary" onclick="closeform()">ĐĂNG NHẬP </button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-md-socials">
+                    
+                        <a href="" class="md-btn-icon face">
+                            <i class="fa-brands fa-square-facebook md-social-icon"></i>
+                            Facebook
+                            
+                        </a>
+                        <a href="" class="md-btn-icon goo">
+                            <i class="fa-brands fa-google-plus-g md-social-icon"></i>
+                            Google
+                        </a>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- back to top -->
+        <div class="rocket">
+            <a href="#">
+                <i class="fa-solid fa-angles-up"></i>
+            </a>
+        </div>
+        <script src="../assets/JS/form.js"></script>
+        <script src="../assets/JS/sidebar.js"></script>
+    </body>
+</html>
